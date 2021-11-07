@@ -1,0 +1,59 @@
+.cuad {
+    width: 150px;
+    height: 150px;
+    color: wheat;
+    text-align: center;
+    line-height: 150px;
+    margin: 2%;
+}
+
+/* para animar le aplico a la class la propiedad animation y esa animation la declaro abajo con @keyframes */
+
+.cuadrado {
+    animation: anim1 1s infinite alternate ease-in-out;
+}
+
+@keyframes anim1 {
+    0% {
+        background-color: forestgreen;
+        border: 6px solid green;
+    }
+
+    100% {
+        background-color: rgb(3, 73, 3);
+        border: 6px dashed green;
+    }
+}
+
+.cuadrado2 {
+    background-color: black;
+    border-radius: 15px;
+}
+
+.cuadrado2:hover {
+    animation: anim2 1s infinite linear;
+}
+
+@keyframes anim2 {
+    0% {
+        transform: rotate(0deg) scale(150%);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(150%);
+    }
+}
+
+.cuadrado3 {
+    background-color: darkslategrey;
+}
+
+.cuadrado3:hover {
+    animation: anim3 5s linear infinite;
+}
+
+@keyframes anim3 {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
